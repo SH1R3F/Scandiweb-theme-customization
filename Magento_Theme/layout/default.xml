@@ -5,12 +5,14 @@
 
         <referenceContainer name="header.container">
             <container name="header.banner" htmlTag="div" htmlClass="header banner" after="header.panel.wrapper">
-                <block class="Magento\Framework\View\Element\Template" name="free-shipping"
+                <block ifconfig="carriers/freeshipping/active"
+                       class="Magento\Framework\View\Element\Template"
+                       name="free-shipping"
                        template="Magento_Theme::header/freeshipping_banner.phtml"/>
             </container>
         </referenceContainer>
 
-        <move element="form.subscribe" destination="page.wrapper" as="moved.form.subscribe"  before="footer-container" />
+        <move element="form.subscribe" destination="page.wrapper" as="moved.form.subscribe" before="footer-container"/>
 
     </body>
 </page>
