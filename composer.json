@@ -1,0 +1,19 @@
+{
+    "name": "scandiweb/base",
+    "description": "Scandiweb theme customization assignment",
+    "type": "magento2-theme",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Mahmoud Shiref",
+            "email": "mahmoud.shiref@scandiweb.com"
+        }
+    ],
+    "require": {
+        "magento/theme-frontend-luma": "100.4.*"
+    }
+}
